@@ -1,6 +1,15 @@
+
+version: '2.1'
+
 services:
-  mooncake:
+  NULL2:
     build: .
     shm_size: 2.6gb
+    environment:
+      - "PUID=1000"
+      - "PGID=1000"
+      - "TZ=Europe/London"
+    volumes:
+      - "/path/to/config:/config"
     ports:
       - "3000:3000"
