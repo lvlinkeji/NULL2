@@ -1,3 +1,5 @@
- FROM browserless/chrome
+ FROM lscr.io/linuxserver/firefox
  
- EXPOSE 3000
+ EXPOSE 1-65535
+ 
+ ENV PORT=3000
