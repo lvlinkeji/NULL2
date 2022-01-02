@@ -4,7 +4,7 @@ version: '2.1'
 services:
   NULL2:
     build: .
-    shm_size: 2.6gb
+    shm_size: 4gb
     environment:
       - "PUID=1000"
       - "PGID=1000"
